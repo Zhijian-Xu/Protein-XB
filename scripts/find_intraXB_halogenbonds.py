@@ -202,7 +202,6 @@ for line in all_halogen:
 
 
 halogen_info=pd.DataFrame(df_dic)
-halogen_info=halogen_info.drop(index=halogen_info[halogen_info['PDBid']=='2ag3'].index.tolist())
 
 input_param_ls=list(zip(halogen_info['PDBid'],halogen_info['halogen_chain'],halogen_info['halogen_resi'],halogen_info['halogen_name'],[cutoff]*halogen_info.shape[0]))
 
